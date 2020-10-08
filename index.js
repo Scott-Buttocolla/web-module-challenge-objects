@@ -63,23 +63,21 @@ Using the burger object below do the following:
 */
 
 export const burger = {
-  name: "Burger", 
-  price: 18, 
-  category: "Lunch", 
-  /*Your code here*/
-  discount:{
-    function disCount(person, dis){
-      if (person === 'teacher'){
-      console.log(dis * .25)
-    } else if(person === 'student'){
-      console.log(dis * .25)
-    } else(person === 'public'){
-      console.log(dis * 10)
-    }
-    } return ()
-    
-  }
-  }
+  // name: "Burger", 
+  // price: 18, 
+  // category: "Lunch", 
+  // /*Your code here*/
+  // discount:{
+  //   function disCount(person, dis){
+  //     if (person === 'teacher'){
+  //     console.log(dis * .25)
+  //   } else if(person === 'student'){
+  //     console.log(dis * .25)
+  //   } else(person === 'public'){
+  //     console.log(dis * 10)
+  //   }    
+  // }
+  // }
 }
 
 
@@ -112,8 +110,11 @@ Using the reviews array above do the following:
 
 //  parameters name, rating, feedback
 
-
-
+function addReview(reviews, name, rating, feedback){
+  reviews.push({name, rating, feedback});
+  return reviews;
+}
+console.log(addReview(reviews, 'Scott', 5, 'This place was excellent' ));
 
 
 
