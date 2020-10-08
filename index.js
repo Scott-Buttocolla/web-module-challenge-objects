@@ -138,13 +138,11 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
-
-function getReviewByIndex(array, index) {
-
-  /*Your code here*/
+function getReviewByIndex(reviews, index) {
+  reviews[index];
+  return`${this.name} gave the restaurant a ${this.rating} star review and their feedback was: ${this.feedback}`;
 }
-
-
+console.log(getReviewByIndex(reviews, 0));
 
 
 
