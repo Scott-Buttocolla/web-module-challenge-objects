@@ -61,6 +61,7 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
+  discount:
 }
 
   /*Your code here*/
@@ -138,14 +139,10 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
-function getReviewByIndex(reviews, index) {
-  reviews[index];
-  return`${this.name} gave the restaurant a ${this.rating} star review and their feedback was: ${this.feedback}`;
+function getReviewByIndex(array, index) {
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`;
 }
-console.log(getReviewByIndex(reviews, 0));
-
-
-
+console.log(getReviewByIndex(reviews, 2));
 
   
 
@@ -159,15 +156,14 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-
-
-  return `${this.name} gave the resturant a ${this.rating}`
+function getLastReview(array) { 
+  let index = array.length -1;
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`;
   /*Your code here*/
-} '${this.name} '
+} 
+console.log(getLastReview(reviews));
 
 
-//     return `${this.name} likes to eat ${this.favFood}`;
 
 
 
