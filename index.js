@@ -61,25 +61,15 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  discount:
-}
-
-  /*Your code here*/
-  // discount:{
-  //   function disCount(person, dis){
-  //     if (person === 'teacher'){
-  //     console.log(dis * .25)
-  //   } else if(person === 'student'){
-  //     console.log(dis * .25)
-  //   } else(person === 'public'){
-  //     console.log(dis * 10)
-  //   }    
-  // }
-  // }
-
-
-
-
+  discount: function specials(someThing){    
+      if (someThing === 'teacher' || someThing === 'student'){
+    return burger.price = burger.price - burger.price * .25;
+    }else{
+    return burger.price = burger.price - burger.price * .1;
+    }
+    }    
+  }
+console.log(burger.discount('student'));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
